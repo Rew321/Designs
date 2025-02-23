@@ -10,11 +10,12 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 .errors{
     padding: 10px;
     height: auto;
+    display: none;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -37,8 +38,8 @@ body{
 .container{
     max-width: 700px;
     width: 100%;
-
-    padding: -5px 8px;
+    background: #fff;
+    padding: 1px 10px;
     border-radius: 5px;
 }
 .container .title{
@@ -54,6 +55,15 @@ body{
     height: 3px;
     width: 30px;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container .title::after{
+    content: '';
+    position: absolute;
+    margin-left: -31px;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 .container form .user-details{
     display: flex;
