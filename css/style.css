@@ -10,13 +10,35 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
 }
+.errors{
+    padding: 10px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgb(249, 248, 248);
+}
+.card{
+    background: #fff;
+    border-radius: 7px;
+}
+.login-border{
+    border-top: .4rem solid #198754;
+    border-bottom: .4rem solid #198754;
+    border-radius: 10px;
+    margin-top: -2px;;
+   }
+   
 .container{
     max-width: 700px;
     width: 100%;
-    background: #fff;
-    padding: 25px 30px;
+
+    padding: -5px 8px;
     border-radius: 5px;
 }
 .container .title{
@@ -45,6 +67,7 @@ form .user-details .input-box{
 }
 .user-details .input-box .details{
     display: block;
+    color: #808080;
     font-weight: 500;
     margin-bottom: 5px;
 }
